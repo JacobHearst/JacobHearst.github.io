@@ -1,0 +1,5 @@
+{{ with .GetTerms "tags" }}
+    {{ range . }}
+      <a href="{{ .RelPermalink }}"><span class="badge text-bg-primary mb-2">{{ .LinkTitle }}</span></a>
+    {{ end }}
+{{ end }}

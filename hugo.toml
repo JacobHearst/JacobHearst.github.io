@@ -1,3 +1,5 @@
-baseURL = 'hearst.dev/'
+baseURL = 'https://hearst.dev/'
 languageCode = 'en-us'
 title = 'Hearst.dev'
+[taxonomies]
+  tag = 'tags'
