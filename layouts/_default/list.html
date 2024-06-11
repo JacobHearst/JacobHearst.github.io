@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 <div class="container mt-3">
-  <h1 class="text-center">Posts</h1>
+  <h1 class="text-center">Musings</h1>
   <p class="text-center lead mb-3">
     {{ block "description" . }}
       A collection of ramblings on whatever topics I find interesting enough to share
@@ -15,7 +15,7 @@
   <div class="card mb-3 w-75 mx-auto">
     <div class="card-body">
       <h5><a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .LinkTitle }}</a></h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">{{ .PublishDate | time.Format ":date_medium" }}</h6>
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{ .PublishDate | time.Format ":date_medium" }} • {{ .ReadingTime }} minutes</h6>
       <p class="card-text">
         {{ .Summary }}
       </p>
@@ -29,4 +29,7 @@
 {{ end }}
 {{ define "footer" }}
 &nbsp;
+{{ end }}
+{{ define "active" }}
+active
 {{ end }}
