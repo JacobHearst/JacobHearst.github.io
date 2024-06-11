@@ -2,7 +2,7 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-<div class="container w-50">
+<div class="container">
   <h1 class="my-3">{{ .Title }}</h1>
   <p class="text-body-secondary">{{ .PublishDate | time.Format ":date_medium" }} • {{ .ReadingTime }} minutes</p>
   {{ .TableOfContents }}
