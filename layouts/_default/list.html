@@ -13,7 +13,7 @@
   <div class="card mb-3 w-75 mx-auto">
     <div class="card-body">
       <h5><a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .LinkTitle }}</a></h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">{{ .PublishDate | time.Format ":date_medium" }} • {{ .ReadingTime }} minutes</h6>
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{ .PublishDate | time.Format ":date_medium" }} • {{ .ReadingTime }} minute(s)</h6>
       <p class="card-text">
         {{ .Summary }}
       </p>
