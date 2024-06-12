@@ -1,5 +1,6 @@
 baseURL = 'https://hearst.dev/'
 languageCode = 'en-us'
 title = 'Hearst.dev'
+enableGitInfo = true
 [taxonomies]
   tag = 'tags'
