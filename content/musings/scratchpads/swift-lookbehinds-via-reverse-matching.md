@@ -1,7 +1,7 @@
 +++
-title = 'Scratchpad: Lookbehinds via reverse matching'
+title = '[In Progress] Scratchpad: Lookbehinds via reverse matching'
 date = 2024-06-12T07:51:43-05:00
-draft = true
+draft = false
 tags = ['swift', 'scratchpad']
 +++
 
