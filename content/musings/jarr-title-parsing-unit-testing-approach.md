@@ -1,6 +1,6 @@
 +++
 title = 'Unit Testing NZB/Torrent Parsers with Custom String Interpolations'
-date = 2024-06-11T09:42:29-05:00
+date = 2024-06-11T12:12:27-05:00
 draft = false
 tags = ['swift', 'jarr']
 +++

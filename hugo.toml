@@ -4,3 +4,5 @@ title = 'Hearst.dev'
 enableGitInfo = true
 [taxonomies]
   tag = 'tags'
+[frontmatter]
+  lastmod = ["lastmod", ":git"]

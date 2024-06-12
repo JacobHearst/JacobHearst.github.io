@@ -5,8 +5,14 @@
 <div class="container">
   <h1 class="mt-2">{{ .Title }}</h1>
   {{ partial "tags.html" . }}
-  <p class="text-body-secondary">Published: {{ .PublishDate | time.Format ":date_medium" }}</p>
-  <p class="text-body-secondary">Updated: {{ .Lastmod | time.Format ":date_medium" }}</p>
+  {{- $pubdate := .PublishDate.Format "Jan 2, 2006 @ 07:05 AM" }}
+  <p class="text-body-secondary">Created: <time datetime="{{ .PublishDate }}" title = "{{ .PublishDate }}">{{ $pubdate }}</time></p>
+  <!-- {{- if .Lastmod -}}
+    {{- $lastmod := .Lastmod.Format "Jan 2, 2006 @ 07:05 AM" }}
+    {{- if ne $lastmod $pubdate }}
+      <p class="text-body-secondary">Updated: <time datetime="{{ .Lastmod }}" title="{{ .Lastmod }}">{{ $lastmod }}</time></p>
+    {{- end }}
+  {{- end }} -->
   {{ .TableOfContents }}
   {{ .Content }}
 </div>
