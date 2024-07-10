@@ -183,6 +183,7 @@ Regex: /(?<=a|b|c)defg/
 ```
 
 Problem: This test case was crashing when I ran the match with the message `"Fatal error: String index is out of bounds"`.
+
 Solution: Reading through the trace output below, I was able to see that I was never `reverse`-ing. Scattering some `buildReverse`s seemed to fix this.
 
 {{< details title="Test case #1 trace output">}}
@@ -1285,6 +1286,7 @@ Regex: /(?<=as|b|c)defg/
 ```
 
 Problem: This regex isn't matching any of the inputs
+
 Solution: I went a little crazy adding the `reverse` instructions and was emitting a `reverse` for every character in `emitReverseQuotedLiteral` instead of one for the whole literal.
 
 {{< details title="Test case #2 trace output" >}}
@@ -3248,6 +3250,7 @@ Regex: /(?<=\d{1,3}-.{1,3}-\d{1,3})suffix/
 ```
 
 Problem: This regex isn't matching the input
+
 Solution: It looks like this expression uses builtins which I haven't addressed at all yet. Sounds like a problem for future Jacob.
 
 {{< details title="Test case #3 trace output" >}}
