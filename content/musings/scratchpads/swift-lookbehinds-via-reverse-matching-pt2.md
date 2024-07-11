@@ -168,7 +168,7 @@ Returning the current position in that case seems to work for my current test ca
 
 _Some time later_
 
-### Debugging
+### The Bugs
 
 Unfortunately there are still issues with the approach I used above. Luckily, the authors of the regex engine added in some tracing
 machinary. This machinary is locked behind a compilation flag which I was having trouble setting for xcode runs so I just inverted the
